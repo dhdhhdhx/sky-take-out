@@ -124,4 +124,20 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>   <!-- 3.12.x 及以上支持 JDK 21 -->
+                <configuration>
+                    <release>17</release>     <!-- 或 source/target 设 17/21 均可 -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
+
+
